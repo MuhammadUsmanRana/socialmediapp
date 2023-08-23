@@ -40,6 +40,7 @@ export default function Post({ post }) {
         const token = localStorage.getItem("token");
         const getdata = await axios.get("/get_data", {
           headers: { Authorization: `Bearer ${token}` },
+          // njsdnfefbwjcnsd
         });
         if (getdata.data.employee) {
           dispatch(getItem(getdata.data.employee));
