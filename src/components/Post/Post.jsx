@@ -33,6 +33,7 @@ export default function Post({ post }) {
   const getDataStore = useSelector((store) => {
     return store.mediaApp.socialApp;
   });
+  //this is a get Data
   const dispatch = useDispatch();
   useEffect(() => {
     const fetchItem = async () => {
